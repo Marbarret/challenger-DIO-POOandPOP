@@ -10,12 +10,10 @@ class Math {
     }
 }
 
-// resultado usando closure
 let result = Math().calculator(n1: 2, n2: 3) { (no1, no2) -> Int in
     return no1 * no2
 }
 
-// resultado simplificando closures
 let result2 = Math().calculator(n1: 2, n2: 3) { $0 * $1 }
 print( result2 )
 
